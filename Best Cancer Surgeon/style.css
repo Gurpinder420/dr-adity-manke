@@ -439,7 +439,12 @@
   .contact-card-icon { font-size: 1.3rem; flex-shrink: 0; }
   .contact-card-label { font-size: .7rem; color: var(--teal-light); letter-spacing: 1.5px; text-transform: uppercase; margin-bottom: 4px; }
   .contact-card-val { font-size: .92rem; color: var(--white); line-height: 1.6; }
-
+ .contact-card-val a
+{
+  color: aliceblue;
+  list-style: none;
+  text-decoration: none;
+}
   .appt-form {
     background: rgba(13,31,60,.7); border: 1px solid rgba(201,168,76,.15);
     border-radius: 12px; padding: 40px 36px;
