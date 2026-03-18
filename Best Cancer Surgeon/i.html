@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>GI Oncology · playful icon (bubble tea) | hospital style</title>
+  <!-- Font Awesome 6 (for arrow icon) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      background: linear-gradient(145deg, #f4f9fd 0%, #ffffff 100%);
+      font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 2rem;
+    }
+
+    /* card style (exact same as your spec-card) */
+    .spec-card {
+      background: #ffffff;
+      border-radius: 32px;
+      padding: 2.5rem 2rem;
+      max-width: 380px;
+      width: 100%;
+      box-shadow: 0 20px 35px -8px rgba(10, 60, 90, 0.12), 0 5px 12px rgba(0,40,60,0.05);
+      transition: all 0.3s cubic-bezier(0.2, 0.9, 0.4, 1);
+      border: 1px solid rgba(10, 110, 156, 0.08);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .spec-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 30px 45px -12px rgba(10, 94, 136, 0.2);
+      border-color: rgba(45, 156, 124, 0.2);
+    }
+
+    .spec-card::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 180px;
+      height: 180px;
+      background: radial-gradient(circle at 100% 0%, rgba(45,156,124,0.03) 0%, transparent 70%);
+      border-radius: 0 0 0 50%;
+      pointer-events: none;
+    }
+
+    /* icon styling - using 🧋 (bubble tea) as a fun, distinctive icon for GI */
+    .spec-icon {
+      font-size: 3.8rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 90px;
+      height: 90px;
+      background: linear-gradient(135deg, #f3e5d8 0%, #ecd9c2 100%);
+      border-radius: 30px;
+      margin-bottom: 1.8rem;
+      color: #a55d3d; /* warm brown */
+      box-shadow: 0 8px 18px rgba(165, 93, 61, 0.12);
+      transition: 0.2s;
+    }
+
+    .spec-card:hover .spec-icon {
+      background: linear-gradient(135deg, #a55d3d 0%, #c47a56 100%);
+      color: white;
+      transform: scale(1.02) rotate(2deg);
+    }
+
+    /* heading */
+    .spec-card h3 {
+      font-size: 2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: -0.02em;
+      color: #0a3b5e;
+      margin-bottom: 1rem;
+      font-family: 'Plus Jakarta Sans', 'Inter', sans-serif;
+    }
+
+    /* description */
+    .spec-card p {
+      color: #4a5b6b;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      margin-bottom: 2rem;
+    }
+
+    /* tag style */
+    .spec-tag {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      background: #faf0e8;
+      color: #a55d3d;
+      font-weight: 600;
+      font-size: 0.95rem;
+      padding: 0.7rem 1.5rem 0.7rem 1.8rem;
+      border-radius: 60px;
+      border: 1px solid rgba(165, 93, 61, 0.2);
+      transition: all 0.2s ease;
+    }
+
+    .spec-card:hover .spec-tag {
+      background: #a55d3d;
+      color: white;
+      border-color: #a55d3d;
+      box-shadow: 0 6px 14px rgba(165, 93, 61, 0.25);
+    }
+
+    .spec-tag i {
+      transition: transform 0.2s;
+    }
+
+    .spec-card:hover .spec-tag i {
+      transform: translateX(4px);
+    }
+
+    /* optional extra detail for GI cancers */
+    .extra-detail {
+      margin-top: 1.2rem;
+      font-size: 0.9rem;
+      color: #a55d3d;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      opacity: 0.9;
+    }
+
+    /* demo note */
+    .demo-note {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: rgba(255,255,255,0.7);
+      backdrop-filter: blur(6px);
+      padding: 0.5rem 1rem;
+      border-radius: 40px;
+      font-size: 0.9rem;
+      color: #0a3b5e;
+      border: 1px solid #cbdde9;
+    }
+
+    @media (max-width: 450px) {
+      .spec-card {
+        padding: 2rem 1.5rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Gastrointestinal Oncology card with 🧋 (bubble tea) icon – playful & memorable -->
+  <div class="spec-card">
+    <!-- GI icon: 🧋 bubble tea – represents "digestive tract / beverage" in a lighthearted way -->
+    <span class="spec-icon">🧋</span>
+    <h3>Gastrointestinal Oncology</h3>
+    <p>Expert management of stomach, colon, rectal, esophageal, pancreatic and small bowel cancers using minimally invasive and robotic techniques with enhanced recovery protocols.</p>
+    <span class="spec-tag">
+      <i class="fas fa-arrow-right"></i> Core Specialty
+    </span>
+    <!-- extra detail listing specific GI areas -->
+    <div class="extra-detail">
+      <i class="fas fa-check-circle" style="color: #a55d3d;"></i> Esophageal · Gastric · Colorectal · Pancreatic
+    </div>
+  </div>
+
+  <!-- tiny hint -->
+  <div class="demo-note">
+    <i class="fas fa-info-circle"></i> GI Oncology with 🧋 bubble tea icon
+  </div>
+</body>
+</html>

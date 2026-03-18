@@ -327,6 +327,12 @@
   .spec-icon { font-size: 2rem; margin-bottom: 18px; display: block; }
   .spec-card h3 { font-family: 'Cormorant Garamond', serif; font-size: 1.3rem; color: var(--white); margin-bottom: 12px; }
   .spec-card p { font-size: .85rem; color: var(--muted); line-height: 1.7; }
+  .spec-icon img
+  {
+    height: 45px;
+  }
+ 
+  
   .spec-tag {
     display: inline-block; margin-top: 16px;
     font-size: .7rem; letter-spacing: 1.5px; text-transform: uppercase;
