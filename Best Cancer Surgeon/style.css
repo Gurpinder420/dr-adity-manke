@@ -13,7 +13,10 @@
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
 
-  html { scroll-behavior: smooth; }
+  html {
+    scroll-behavior: smooth;
+    overflow-x: hidden; /* Prevent horizontal scroll if an element slightly overflows */
+  }
 
   body {
     font-family: 'DM Sans', sans-serif;
@@ -269,7 +272,7 @@
     gap: 80px; align-items: center;
   }
 
-  .about-img-stack { position: relative; }
+  .about-img-stack { position: relative; overflow: hidden; }
   .about-img-main {
     width: 100%; border-radius: 8px;
     height: 500px; object-fit: cover; object-position: top;
