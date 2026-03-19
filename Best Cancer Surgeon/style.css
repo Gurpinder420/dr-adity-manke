@@ -347,7 +347,7 @@
     border: 1px solid rgba(201,168,76,.1); border-radius: 10px; overflow: hidden;
   }
   .treat-item {
-    padding: 36px 32px;
+    padding: 20px;
     background: rgba(10,22,40,.7);
     border-right: 1px solid rgba(201,168,76,.08);
     border-bottom: 1px solid rgba(201,168,76,.08);
@@ -358,6 +358,66 @@
   .treat-item h3 { font-size: 1.05rem; color: var(--white); margin-bottom: 10px; font-weight: 500; }
   .treat-item p { font-size: .84rem; color: var(--muted); line-height: 1.7; }
 
+.treat-num1
+{
+  background-image: url("./images/robotic-surgery.jpg");
+  height: 200px;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding-left: 15px;
+  color: #c9a84b;
+}
+.treat-num2
+{
+  background-image: url("./images/Laparoscopy-Surgery.jpg");
+  height: 200px;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding-left: 15px;
+  color: #c9a84b;
+}
+.treat-num3
+{
+  background-image: url("./images/HIPEC.jpg");
+  height: 200px;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding-left: 15px;
+  color: #c9a84b;
+}
+.treat-num4
+{
+  background-image: url("./images/cytoreductive_surgery.jpg");
+  height: 200px;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding-left: 15px;
+  color: #c9a84b;
+}
+.treat-num5
+{
+  background-image: url("./images/Oncoplastic-Breast-Surgery.jpg");
+  height: 200px;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding-left: 15px;
+  color: #c9a84b;
+}
+.treat-num6
+{
+  background-image: url("./images/pipac.jpg");
+  height: 200px;
+  background-size: 100% 100%;
+  border-radius: 10px;
+  font-size: 2rem;
+  padding-left: 15px;
+  color: #c9a84b;
+}
   /* ── HOSPITALS ── */
   .hospitals-section { background: var(--navy); }
   .hosp-grid {
